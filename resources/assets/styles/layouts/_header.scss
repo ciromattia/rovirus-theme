@@ -1,0 +1,206 @@
+body {
+  .banner {
+    background-color: transparent;
+
+    .navbar-brand {
+      padding: 0;
+      border-bottom: none;
+      z-index: 99;
+      position: relative;
+
+      img {
+        width: 152px;
+        height: 119px;
+
+        @include media-breakpoint-up($breakpoint-desktop) {
+          width: 152px;
+          height: 119px;
+        }
+      }
+
+      &::before {
+        content: "";
+        width: 280px;
+        height: 280px;
+        background: url("../images/corona.svg") no-repeat center center;
+        background-size: contain;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: -85px;
+        left: -67px;
+        animation: rotate 45s infinite;
+      }
+    }
+
+    .navbar-toggler {
+      position: relative;
+      background: $white;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      transition: background 0.3s ease-out;
+      z-index: 99;
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: $black;
+        border-radius: 0;
+        top: 26px;
+        left: 19px;
+        width: 16px;
+        height: 2px;
+        transition: transform 0.5s ease-out;
+      }
+
+      &.collapsed {
+        background: $black;
+
+        &::before,
+        &::after {
+          background: $white;
+        }
+
+        &::before {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    .navbar-collapse {
+      &.collapsing {
+        transition: none;
+        display: none;
+      }
+
+      .navbar-nav {
+        .nav-link {
+          font-size: 30px;
+          font-weight: bold;
+          text-align: center;
+
+          &.button-white {
+            > a {
+              @extend .btn;
+            }
+          }
+        }
+      }
+
+      &.show {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        padding: 0 15px;
+        background: $black;
+        overflow-y: scroll;
+        z-index: 90;
+
+        .navbar-nav {
+          padding-top: 250px;
+
+          .nav-link {
+            color: $white;
+
+            > a {
+              min-width: 185px;
+            }
+
+            &.button-primary {
+              > a {
+                @extend .btn;
+                @extend .btn-primary;
+
+                border: 4px solid $white;
+              }
+            }
+
+            &.button-white {
+              > a {
+                @extend .btn;
+                @extend .btn-white;
+              }
+            }
+          }
+        }
+      }
+
+      @include media-breakpoint-up($breakpoint-desktop) {
+        justify-content: flex-end;
+        align-items: center;
+
+        .navbar-nav {
+          .nav-item {
+            margin-left: 30px;
+          }
+
+          .nav-link {
+            font-size: 2rem;
+            font-weight: bold;
+
+            /* stylelint-disable */
+            &.button-primary {
+              display: flex;
+              align-items: center;
+
+              > a {
+                padding: 7px 0;
+                border-bottom: 4px solid transparent;
+              }
+
+              &:hover,
+              &:active,
+              &:focus {
+                > a {
+                  text-decoration: none;
+                  border-color: $black;
+                }
+              }
+            }
+
+            &.button-white {
+              > a {
+                @include button-variant($black, $black, $white, $white, $white, $white);
+
+                @at-root .text-inverse & {
+                  @include button-variant($white, $white, $black, $black, $black, $black);
+                }
+              }
+            }
+
+            /* stylelint-enable */
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up($breakpoint-desktop) {
+    &.text-inverse .banner {
+      .navbar-brand {
+        .logo {
+          display: none;
+        }
+
+        .logo-inverse {
+          display: block;
+        }
+      }
+
+      .navbar-collapse .navbar-nav .nav-link.button-white > a {
+        @include button-variant($white, $white, $black, $black, $black, $black);
+
+        &:hover,
+        &:active,
+        &:focus {
+          border: 4px solid $white;
+        }
+      }
+    }
+  }
+}

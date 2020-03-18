@@ -1,0 +1,64 @@
+// Pages
+.page-header {
+  position: relative;
+  padding-top: 110px;
+  margin-bottom: 0;
+  overflow: hidden;
+
+  @include media-breakpoint-up($breakpoint-desktop) {
+    padding-top: 120px;
+  }
+
+  h1 {
+    margin-bottom: 50px;
+
+    small {
+      font-weight: $font-weight-bold;
+      font-size: 65%;
+
+      @include media-breakpoint-up($breakpoint-desktop) {
+        font-size: 80%;
+      }
+    }
+  }
+
+  a {
+    margin-bottom: 238px;
+
+    @include media-breakpoint-up($breakpoint-desktop) {
+      margin-bottom: 238px;
+    }
+  }
+}
+
+.error404 {
+  //
+}
+
+.main {
+  .container {
+    overflow: hidden;
+  }
+}
+
+#coronas {
+  z-index: -10;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  img {
+    position: absolute;
+    animation: rotate 43s infinite linear;
+    z-index: -1;
+
+    @include media-breakpoint-down(md) {
+      max-width: 140px;
+      max-height: 140px;
+    }
+  }
+}

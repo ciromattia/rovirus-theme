@@ -1,0 +1,20 @@
+/* stylelint-disable no-descending-specificity */
+// Buttons
+.btn {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
+  font-weight: $font-weight-normal;
+  min-width: 260px;
+  font-size: 40px;
+
+  &-primary {
+    @include button-variant($black, $black, $white, $white, $white, $white);
+  }
+
+  &-white {
+    @include button-variant($white, $white, $black, $black, $black, $black);
+  }
+}
+
+/* stylelint-enable */

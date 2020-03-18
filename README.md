@@ -39,4 +39,4 @@ stessa licenza.
 
 Rovirus è fatto da Giorgio, Luca, Alice e Ciro Mattia.
 
-Unleash the love <3
+Unleash the love ❤️

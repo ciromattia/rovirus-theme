@@ -25,7 +25,7 @@ contribuire con una pull request accettiamo volentieri!
 ## Installazione
 
 Assicuratevi di aver installato tutti i plugin richiesti sopra.  
-Scaricate lo zip del tema dalla sezione release e caricatelo nella vostra installazione Wordpress, poi abilitatelo.
+Scaricate lo [zip del tema](https://github.com/ciromattia/rovirus-theme/archive/v1.0.zip) dalla sezione release e caricatelo nella vostra installazione Wordpress, poi abilitatelo.
 
 Trovate le opzioni per logo, favicon ecc. nella sezione Aspetto > Personalizza
 

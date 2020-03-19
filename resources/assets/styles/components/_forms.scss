@@ -124,6 +124,11 @@
       @extend .invalid-feedback;
 
       display: block;
+
+      @include media-breakpoint-up(lg) {
+        margin-top: -4.875rem;
+        margin-bottom: 4.875rem;
+      }
     }
   }
 

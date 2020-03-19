@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-lg-5">
+                [text* nome placeholder "Nome*"]
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-5">
+        [email* email placeholder "Mail*"]</div>
+    <div class="col-lg-5 offset-lg-1">
+        [tel* tel placeholder "Telefono"]</div>
+</div>
+Come possiamo aiutarti?
+[textarea* textarea placeholder "Il tuo messaggio"]
+[acceptance acceptance-74] dichiaro di aver letto l'informativa sulla Privacy e presto il mio consenso al trattamento dei miei dati personali per le finalità ivi indicate come necessarie per ottenere il servizio richiesto. [/acceptance]
+[submit "Invia"]

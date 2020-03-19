@@ -1,0 +1,86 @@
+.wpcf7 {
+  form {
+    margin-bottom: 0;
+
+    p {
+      font-size: 28px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      max-width: 80%;
+    }
+  }
+
+  input[type="email"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="time"],
+  input[type="week"],
+  input[type="url"],
+  select,
+  textarea {
+    @extend .form-control;
+
+    height: calc(1.2em + 1.6rem + 8px);
+    border: none;
+    border-bottom: solid 5px $black;
+    padding-left: 0;
+    font-size: 3.125rem;
+    line-height: 1.2;
+    color: $black;
+    background-color: transparent;
+    border-radius: 0;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 4.875rem;
+    }
+  }
+
+  textarea {
+    height: auto;
+    border: solid 5px $black;
+  }
+
+  input[type="submit"] {
+    @extend .btn;
+    @extend .btn-primary;
+
+    cursor: pointer;
+    font-weight: $font-weight-normal;
+  }
+
+  .button {
+    @extend .btn;
+    @extend .btn-primary;
+  }
+
+  .wpcf7-not-valid-tip {
+    color: $form-feedback-invalid-color;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: -4.875rem;
+      margin-bottom: 4.875rem;
+    }
+  }
+
+  .wpcf7-not-valid {
+    border-color: $form-feedback-invalid-color !important;
+  }
+
+  .wpcf7-list-item {
+    margin-left: 0 !important;
+  }
+
+  .wpcf7-validation-errors {
+    border-color: $form-feedback-invalid-color;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

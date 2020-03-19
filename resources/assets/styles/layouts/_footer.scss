@@ -7,11 +7,6 @@ footer.content-info {
     font-size: 1.5rem;
   }
 
-  a {
-    color: $white;
-    font-weight: $font-weight-bold;
-  }
-
   @include media-breakpoint-up($breakpoint-desktop) {
     padding-top: 70px;
     padding-bottom: 70px;

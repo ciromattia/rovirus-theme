@@ -1,0 +1,14 @@
+{
+  "fonts/gangstergrotesk-bold.woff": "fonts/gangstergrotesk-bold_57508fdb.woff",
+  "fonts/gangstergrotesk-bold.woff2": "fonts/gangstergrotesk-bold_b006a803.woff2",
+  "fonts/gangstergrotesk-regular.woff": "fonts/gangstergrotesk-regular_cda1c6b4.woff",
+  "fonts/gangstergrotesk-regular.woff2": "fonts/gangstergrotesk-regular_af4f9e0a.woff2",
+  "images/ajax-loader.gif": "images/ajax-loader_c5cd7f53.gif",
+  "images/corona.svg": "images/corona_3f280085.svg",
+  "images/rovirus-logo.svg": "images/rovirus-logo_067e293e.svg",
+  "images/scroll-down.svg": "images/scroll-down_61dec807.svg",
+  "scripts/customizer.js": "scripts/customizer_eb0faa26.js",
+  "styles/main.css": "styles/main_eb0faa26.css",
+  "scripts/main.js": "scripts/main_eb0faa26.js",
+  "scripts/media-svg.js": "scripts/media-svg_eb0faa26.js"
+}

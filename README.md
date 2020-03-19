@@ -27,7 +27,7 @@ Il tema è funzionante così com'è, per il form di contatto richiede uno dei se
 ## Installazione
 
 Assicuratevi di aver installato tutti i plugin richiesti sopra.  
-Scaricate l'archivio dell'[ultima release](https://github.com/ciromattia/rovirus-theme/releases/latest), decomprimetelo e caricatelo via FTP nella cartella `wp-content/themes`, poi abilitatelo da _Aspetto > Temi_.
+Scaricate l'archivio dell'[ultima release](https://github.com/ciromattia/rovirus-theme/releases/latest), e decomprimetelo.   Rinominate la cartella *rovirus-theme-1.x* in **rovirus** e caricatela via FTP nella cartella `wp-content/themes`, poi abilitatelo da _Aspetto > Temi_.
 
 Trovate le opzioni per logo, favicon ecc. nella sezione _Aspetto > Personalizza_.
 

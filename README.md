@@ -18,16 +18,21 @@ Per usare il tema il avete bisogno di un hosting con le seguenti caratteristiche
 
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/)
 
-Il tema è funzionante così com'è, tuttavia richiede al momento il plugin a pagamento [Gravity Forms](https://www.gravityforms.com/).  
-È possibile sostituirlo con altri plugin analoghi che offrano form di contatto (e.g. CF7), ma il tema non contiene gli stili specifici: se volete
-contribuire con una pull request accettiamo volentieri!
+Il tema è funzionante così com'è, per il form di contatto richiede uno dei seguenti plugin:
+
+* [Contact Form 7](https://wordpress.org/plugins/contact-form-7/) (gratuito)
+* [Gravity Forms](https://www.gravityforms.com/) (premium)
+
 
 ## Installazione
 
 Assicuratevi di aver installato tutti i plugin richiesti sopra.  
-Scaricate lo [zip del tema](https://github.com/ciromattia/rovirus-theme/archive/v1.0.zip) dalla sezione release e caricatelo nella vostra installazione Wordpress, poi abilitatelo.
+Scaricate l'archivio dell'[ultima release](https://github.com/ciromattia/rovirus-theme/releases/latest), e decomprimetelo.   Rinominate la cartella *rovirus-theme-1.x* in **rovirus** e caricatela via FTP nella cartella `wp-content/themes`, poi abilitatelo da _Aspetto > Temi_.
 
-Trovate le opzioni per logo, favicon ecc. nella sezione Aspetto > Personalizza
+Trovate le opzioni per logo, favicon ecc. nella sezione _Aspetto > Personalizza_.
+
+Per i moduli di contatto trovate nella directory `docs` gli esempi di form da importare.
+
 
 ## Licenza
 
@@ -35,8 +40,10 @@ Rovirus è rilasciato sotto la licenza [Creative Commons Attribution-ShareAlike 
 che sostanzialmente significa: potete prenderlo e usarlo liberamente, dando credito al progetto originale; se lo modificate ricondividetelo con la
 stessa licenza.
 
+
 ## Autori
 
-Rovirus è fatto da Giorgio, Luca, Alice e Ciro Mattia.
+Rovirus è fatto da Giorgio, Luca, Alice e Ciro Mattia.  
+Contributi: Massimiliano
 
-Unleash the love ❤️
+Unleash your love ❤️

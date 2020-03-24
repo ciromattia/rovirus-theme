@@ -25,6 +25,12 @@ add_action('customize_register', function (\WP_Customize_Manager $wp_customize) 
         'section' => 'title_tagline',
         'settings' => 'site_logo',
     ]));
+    $wp_customize->add_setting('main_color');
+    $wp_customize->add_control(new \WP_Customize_Color_Control($wp_customize, 'main_color', [
+        'label' => __('Main Color', 'sage'),
+        'section' => 'title_tagline',
+        'settings' => 'main_color',
+    ]));
     $wp_customize->add_setting('head_scripts');
     $wp_customize->add_control('head_scripts', [
         'label' => __('Script in head (e.g. Google Analytics)', 'sage'),

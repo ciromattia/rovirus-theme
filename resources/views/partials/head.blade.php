@@ -6,4 +6,9 @@
   @if($scripts = \App\Controllers\App::headScripts())
     {!! $scripts !!}
   @endif
+  <style>
+    html, body {
+      background-image: linear-gradient(180deg, {!! get_theme_mod('main_color', '#e05263') !!} 19%, rgba(255, 255, 255, 0) 70%);
+    }
+  </style>
 </head>
